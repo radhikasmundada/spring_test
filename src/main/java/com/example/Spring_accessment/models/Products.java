@@ -19,6 +19,17 @@ public class Products {
     @Column(name = "product_description")
     private String productDescription;
 
+    public Products() {
+
+    }
+
+    public Products(Long id, String productName, int productPrice, String productDescription) {
+        this.id = id;
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productDescription = productDescription;
+    }
+
     public Long getId() {
         return id;
     }
@@ -48,17 +59,6 @@ public class Products {
     }
 
     public void setProductDescription(String productDescription) {
-        this.productDescription = productDescription;
-    }
-
-    public Products() {
-
-    }
-
-    public Products(Long id, String productName, int productPrice, String productDescription) {
-        this.id = id;
-        this.productName = productName;
-        this.productPrice = productPrice;
         this.productDescription = productDescription;
     }
 
