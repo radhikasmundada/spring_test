@@ -11,7 +11,7 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - /Users/radhikamundada/Documents/BajajTraining/Spring/Spring_assessment/compose-data-volume:/var/lib/postgresql/data
+      - /Users/radhikamundada/Documents/BajajTraining/Spring/Spring_assessment/data-volume:/var/lib/postgresql/data
   app:
     build: .
     image: demo-v1
